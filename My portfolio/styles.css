@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #FFFFFF;
+    background-color: #2C3E50;
+    line-height: 1.6;
+}
+
+/* Wrapper to handle visibility */
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section */
+/* .hero {
+    text-align: center;
+    padding: 300px 20px;
+    background: linear-gradient(135deg, #39FF14, #1F77D7);
+    transition: opacity 0.3s ease-in-out;
+
+    background-image: ;
+} */
+
+
+.hero {
+    text-align: center;
+    padding: 300px 20px;
+    background: url('hero\ img.jpg.jpg') center/cover no-repeat; /* Add your image here */
+    background-color: #2C3E50; /* Fallback color in case the image doesn't load */
+    color: #aca9a9; /* Text color to contrast with background */
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #296e1e;
+    color: #ffff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #1F77D7;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+/* Hidden Sections (Initially hidden) */
+#hidden-sections {
+    display: none;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #34495E;
+    text-align: center;
+    color: #cec7c7;
+}
+
+.about-image {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    margin-bottom: 20px; /* Adds space below the image */
+    transition: all 0.3s ease;
+}
+
+.about-image:hover {
+transform: scale(1.1);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: rgb(14, 13, 13);
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 600px; /* You can adjust this based on your design */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Make project cards take full width on smaller screens */
+        margin: 10px;
+        padding: 10px;}
+
+        .project-img {
+            max-width: 100%; /* Ensure image doesn't overflow */
+            height: auto;
+        }
+    
+        button {
+            width: 100%; /* Make buttons take up the full width on mobile */
+            padding: 12px;
+        }
+    }
+    
+
+.project-card a:hover {
+    background-color: #45a049;
+}
+
+
+
+.project-card:hover {
+    background-color: #296e1e;
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #32383f;
+    margin-bottom: none;
+}
+
+footer p {
+    font-size: 1rem;
+}

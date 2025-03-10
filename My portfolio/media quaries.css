@@ -1,0 +1,60 @@
+/* For devices with a max width of 768px (usually tablets and smaller devices) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    .hero {
+        padding: 50px 20px; /* Reduce padding on smaller screens */
+    }
+
+    .project-img {
+        width: 100%; /* Ensure the images fit the screen */
+        height: auto;
+    }
+
+    .project-card {
+        margin: 10px; /* Less margin to make things fit */
+
+        padding: 15px; /* Less padding for mobile view */
+    }
+
+    /* Adjust buttons to fit better on smaller screens */
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* For very small screens (mobile devices) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px; /* Make the main title smaller */
+    }
+
+    .project-card {
+        text-align: center; /* Center text for better readability */
+    }
+
+    .project-card a {
+        font-size: 14px; /* Adjust font size for smaller buttons */
+    }
+}
+
+/* For devices with a width greater than 768px (tablets and desktops) */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 40px; /* Bigger heading for bigger screens */
+    }
+
+    .project-card {
+        width: 45%; /* More space for project cards */
+        margin: 20px;
+    }
+
+    /* Ensure images don't stretch too wide */
+    .project-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
